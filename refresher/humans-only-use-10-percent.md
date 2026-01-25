@@ -72,14 +72,6 @@ In short: **we use 100% of our brain—just not all at the same time.**
 
 ---
 
-## Related Misconceptions
-
-- [deoxygenated-blood-is-blue]
-- [[cracking-your-knuckles-causes-arthritis]]
-- [[you-need-8-glasses-of-water-a-day]]
-
----
-
 ## Primary Sources
 
 - “Do we really use only 10% of our brain?” — _Scientific American_

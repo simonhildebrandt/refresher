@@ -17,7 +17,7 @@ title: Refresher
         <a href="/#topic">Browse by Topic</a>
         <a href="/#decade">Browse by Decade</a>
         <a href="/about">About</a>
-        <a class="sodapop-search-trigger" onClick="window.dispatchEvent(new CustomEvent('sodapop-search'));">Search</a>
+        <a href="#" class="sodapop-search-trigger" onClick="window.dispatchEvent(new CustomEvent('sodapop-search'));">Search</a>
         <a href="mailto:{{email}}?subject={{ siteName }}">Submit a Myth</a>
       </div>
     </div>
@@ -25,6 +25,6 @@ title: Refresher
     <div class="content">
       {{ content }}
     </div>
-    <script src="/assets/index.js"></script>
+    <script src="{{'/assets/index.js' | bust }}"></script>
   </body>
 </html>

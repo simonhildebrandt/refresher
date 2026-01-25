@@ -19,14 +19,7 @@ const App = () => {
       setDocuments(documents);
       setReady(true);
     });
-    // Connect global event handler on window object
-    // Load search index data
-    // Initialize search component
   }, []);
-
-  useEffect(() => {
-    if (ready) doSearch(searchString);
-  }, [ready]);
 
   useEffect(() => {
     const handleGlobalClick = (event) => {

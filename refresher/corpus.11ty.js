@@ -15,10 +15,11 @@ export default class {
     const documents = {};
 
     collection.forEach((item) => {
+      console.log(item.data.title);
       documents[item.url] = {
         title: item.data.title,
         url: item.url,
-        content: item.content,
+        content: item.rawInput,
       };
     });
 
@@ -27,7 +28,7 @@ export default class {
       this.field("title");
       this.field("content");
 
-      collection.forEach(function (doc) {
+      Object.values(documents).forEach(function (doc) {
         this.add(doc);
       }, this);
     });

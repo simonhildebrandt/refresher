@@ -10,5 +10,19 @@ layout: "../../includes/raw.liquid"
       </li>
     {%- endfor -%}
   </ul>
+
   {{ content }}
+
+  <hr>
+
+  <h2>Related</h2>
+  <ul>
+  {% for rel in related %}
+    {% assign matches = collections.all | where: "fileSlug", rel %}
+    {% assign page = matches[0] %}
+    {% if page %}
+      <li><a href="{{ page.url }}">{{ page.data.title }}</a></li>
+    {% endif %}
+  {% endfor %}
+  </ul>
 </div>
