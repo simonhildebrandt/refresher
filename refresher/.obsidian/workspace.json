@@ -1,0 +1,192 @@
+{
+  "main": {
+    "id": "a755f401d014d5b2",
+    "type": "split",
+    "children": [
+      {
+        "id": "3752eb1611c56042",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "5ec77a978dd36992",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "humans-only-use-10-percent.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "humans-only-use-10-percent"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "0136433d9849aee7",
+    "type": "split",
+    "children": [
+      {
+        "id": "38aba1bb92458e33",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "a5a21e3f076d3c74",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical",
+                "autoReveal": false
+              },
+              "icon": "lucide-folder-closed",
+              "title": "Files"
+            }
+          },
+          {
+            "id": "8c3119c9853fdd91",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              },
+              "icon": "lucide-search",
+              "title": "Search"
+            }
+          },
+          {
+            "id": "f7b8ef4f9f14c6ec",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {},
+              "icon": "lucide-bookmark",
+              "title": "Bookmarks"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "right": {
+    "id": "4aba2aef2fbd9f19",
+    "type": "split",
+    "children": [
+      {
+        "id": "cf267f977a15953b",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "e2ad168880004027",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "humans-only-use-10-percent.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-coming-in",
+              "title": "Backlinks for humans-only-use-10-percent"
+            }
+          },
+          {
+            "id": "b8e3a18a863b5552",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "humans-only-use-10-percent.md",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-going-out",
+              "title": "Outgoing links from humans-only-use-10-percent"
+            }
+          },
+          {
+            "id": "cb2763e2e1395729",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-tags",
+              "title": "Tags"
+            }
+          },
+          {
+            "id": "d09a0083312a3c3f",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "humans-only-use-10-percent.md",
+                "followCursor": false,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-list",
+              "title": "Outline of humans-only-use-10-percent"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "switcher:Open quick switcher": false,
+      "graph:Open graph view": false,
+      "canvas:Create new canvas": false,
+      "daily-notes:Open today's daily note": false,
+      "templates:Insert template": false,
+      "command-palette:Open command palette": false,
+      "bases:Create new base": false
+    }
+  },
+  "active": "5ec77a978dd36992",
+  "lastOpenFiles": [
+    "corpus.11ty.js",
+    "about.md",
+    "about.liquid",
+    "deoxygenated-blood-is-blue.md",
+    "topics.md",
+    "utilities.js",
+    "topic.md",
+    "refresher.json",
+    "default-layout.json",
+    "decades.md",
+    "decade.md",
+    "index.liquid",
+    "index.html",
+    "index.md",
+    "Welcome.md",
+    "humans-only-use-10-percent.md",
+    "xxx"
+  ]
+}

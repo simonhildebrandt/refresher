@@ -1,0 +1,47 @@
+---
+eleventyExcludeFromCollections: true
+layout: "../../includes/raw.liquid"
+---
+<div class="flex flex-col items-center w-full">
+  <div class="my-8 font-bold">Everything you learned, that turned out to be wrong.</div>
+</div>
+
+<div class="page-section">
+  <h2 class="">Recently added myths</h2>
+  <ul class="topic-list">
+    {%- for item in collections.recent -%}
+      <li class="interest-box">
+        <a class="flex flex-col gap-2" href="{{ item.url }}">
+          <div class="font-bold">{{ item.data.title }}</div>
+          <div>read more...</div>
+        </a>
+      </li>
+    {%- endfor -%}
+  </ul>
+</div>
+
+<div class="page-section" id="decade">
+  <h2>Browse by decade</h2>
+  <ul class="topic-list">
+    {%- for decade in collections.decadeDisproved.decades -%}
+      <li class="interest-box"><a href="/decade/{{ decade }}">{{ decade }}</a></li>
+    {%- endfor -%}
+  </ul>
+</div>
+
+<div class="page-section" id="topic">
+  <h2>Browse by topic</h2>
+  <ul class="topic-list">
+    {%- for topic in collections.topics.topics -%}
+      <li class="interest-box"><a href="/topic/{{ topic }}">{{ topic }}</a></li>
+    {%- endfor -%}
+  </ul>
+</div>
+
+<div class="page-section">
+  <h2>Try a random myth?</h2>
+  <a class="interest-box flex flex-col gap-2" href="{{ collections.random.url }}">
+    <div class="font-bold">{{ collections.random.data.title }}</div>
+    <div>read more...</div>
+  </a>
+</div>

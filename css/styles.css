@@ -1,0 +1,39 @@
+@import "tailwindcss";
+
+#search-root {
+  @apply flex justify-center w-full;
+}
+
+.page-section {
+  @apply my-8 mx-4 sm:mx-12;
+  h2 {
+    @apply font-bold border-b-1 border-gray-300 mb-4;
+  }
+}
+
+.topic-list {
+  @apply flex flex-wrap gap-2;
+  li {
+    @apply inline-block;
+  }
+}
+
+.interest-box {
+  @apply border-1 border-gray-300 shadow-sm rounded-xs p-4 hover:border-gray-500 transition;
+}
+
+.wrapped-content {
+  @apply sm:mx-12 mx-8 my-4;
+  hr {
+    @apply my-8 text-gray-300;
+  }
+  h1 {
+    @apply text-3xl font-bold mt-8 mb-4;
+  }
+  h2 {
+    @apply text-xl font-bold mt-6 mb-3;
+  }
+  a {
+    @apply text-blue-600 underline;
+  }
+}

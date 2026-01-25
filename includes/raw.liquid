@@ -1,0 +1,30 @@
+---
+title: Refresher
+---
+<!doctype html>
+<html>
+  <head>
+    <title>{{ siteName }}: {{ title }}</title>
+    <link rel="stylesheet" href="{{'/assets/bundle.css' | bust }}">
+    <link rel="stylesheet" href="{{'/assets/sodapop-search.css' | bust }}">
+  </head>
+  <body>
+    <div class="flex justify-between items-center w-full px-8 pt-2 gap-4">
+      <div>
+        <a class="flex font-bold text-lg" href="/">{{ siteName }}</a>
+      </div>
+      <div class="flex gap-6 text-sm">
+        <a href="/#topic">Browse by Topic</a>
+        <a href="/#decade">Browse by Decade</a>
+        <a href="/about">About</a>
+        <a class="sodapop-search-trigger" onClick="window.dispatchEvent(new CustomEvent('sodapop-search'));">Search</a>
+        <a href="mailto:{{email}}?subject={{ siteName }}">Submit a Myth</a>
+      </div>
+    </div>
+    <div id="search-root"></div>
+    <div class="content">
+      {{ content }}
+    </div>
+    <script src="/assets/index.js"></script>
+  </body>
+</html>
