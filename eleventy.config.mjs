@@ -2,12 +2,17 @@ import interlinker from "@photogabble/eleventy-plugin-interlinker";
 
 export default function (eleventyConfig) {
   // Order matters, put this at the top of your configuration file.
+  eleventyConfig.setUseGitIgnore(false);
   eleventyConfig.setInputDirectory("refresher");
   eleventyConfig.setIncludesDirectory("./includes");
-  eleventyConfig.addPassthroughCopy("assets/bundle.css");
-  eleventyConfig.addPassthroughCopy("assets/sodapop-search.css");
-  eleventyConfig.addPassthroughCopy("assets/index.js");
-  eleventyConfig.addWatchTarget("includes/*");
+  eleventyConfig.addWatchTarget("assets/");
+  eleventyConfig.addPassthroughCopy("./assets/bundle.css");
+  eleventyConfig.addPassthroughCopy("./assets/sodapop-search.css");
+  eleventyConfig.addPassthroughCopy("./assets/index.js");
+  // eleventyConfig.addWatchTarget("./includes/*");
+  // eleventyConfig.setServerOptions({
+  //   watch: ["./assets/*"],
+  // });
   eleventyConfig.addGlobalData("siteName", "Refresher");
   eleventyConfig.addGlobalData("email", "simonhildebrandt@gmail.com");
 

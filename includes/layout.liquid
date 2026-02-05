@@ -16,12 +16,12 @@ layout: "../../includes/raw.liquid"
   <hr>
 
   <h2>Related</h2>
-  <ul>
+  <ul class="topic-list mb-8">
   {% for rel in related %}
     {% assign matches = collections.all | where: "fileSlug", rel %}
     {% assign page = matches[0] %}
     {% if page %}
-      <li><a href="{{ page.url }}">{{ page.data.title }}</a></li>
+      <li class="interest-box"><a href="{{ page.url }}">{{ page.data.title }}</a></li>
     {% endif %}
   {% endfor %}
   </ul>

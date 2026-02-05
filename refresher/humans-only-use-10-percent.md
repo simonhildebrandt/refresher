@@ -18,7 +18,7 @@ sources:
 related:
   - deoxygenated-blood-is-blue
   - cracking-your-knuckles-causes-arthritis
-updated: 2025-01-15
+updated: 2026-01-15
 ---
 
 Humans do **not** use only 10% of their brains. Modern neuroscience shows that
@@ -69,11 +69,3 @@ These findings directly contradicted the 10% claim.
   cerebellum, and subcortical structures.
 
 In short: **we use 100% of our brain—just not all at the same time.**
-
----
-
-## Primary Sources
-
-- “Do we really use only 10% of our brain?” — _Scientific American_
-- fMRI and PET research from the 1980s–1990s
-- Neurological textbook consensus (e.g., Kandel et al.)

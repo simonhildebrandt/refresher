@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect, useState, useRef } from "react";
 import { createRoot } from "react-dom/client";
 import axios from "axios";
 import lunr from "lunr";
@@ -11,6 +11,7 @@ const App = () => {
   const [ready, setReady] = useState(false);
   const [searchString, setSearchString] = useState("");
   const [results, setResults] = useState([]);
+  const inputRef = useRef();
 
   useEffect(() => {
     axios.get("/corpus.json").then((response) => {
@@ -34,6 +35,7 @@ const App = () => {
 
     const handleGlobalTrigger = (event) => {
       event.stopPropagation();
+      setTimeout((_) => inputRef.current.focus(), 200);
       setOpen(true);
     };
 
@@ -44,14 +46,6 @@ const App = () => {
       window.removeEventListener("sodapop-search", handleGlobalTrigger);
     };
   }, []);
-
-  if (!open) {
-    return null;
-  }
-
-  if (!ready) {
-    return "loading...";
-  }
 
   function clearInput() {
     {
@@ -81,7 +75,10 @@ const App = () => {
   }
 
   return (
-    <div className="sodapop-search">
+    <div
+      className="sodapop-search"
+      style={{ display: open ? "block" : "none" }}
+    >
       <div className="sodapop-search-header">
         <div>Search site contents</div>
         <div
@@ -98,6 +95,7 @@ const App = () => {
           placeholder="Search..."
           value={searchString}
           onChange={updateResults}
+          ref={inputRef}
         />
         {searchString.length > 0 && (
           <button className="sodapop-search-clear-button" onClick={clearInput}>
