@@ -15,7 +15,7 @@ body {
 }
 
 .main-wrapper {
-  @apply bg-white flex flex-col justify-between items-center w-full px-8 pb-12 pt-2 gap-4 max-w-4xl mx-auto;
+  @apply bg-white flex flex-col justify-between items-center w-full px-8 pb-12 pt-2 gap-4 max-w-6xl mx-auto;
 }
 
 .page-section {
