@@ -18,7 +18,7 @@ layout: "../../includes/raw.liquid"
 
   <div class="wrapped-content">{{ content }}</div>
 
-  {%- if related -%}
+  {%- unless related == empty -%}
 
     <hr>
 
@@ -31,6 +31,6 @@ layout: "../../includes/raw.liquid"
         <li class="interest-box"><a href="{{ page.url }}">{{ page.data.title }}</a></li>
       {% endif %}
     {% endfor %}
-  {%- endif -%}
+  {%- endunless -%}
   </ul>
 </div>
