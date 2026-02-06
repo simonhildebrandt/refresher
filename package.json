@@ -6,9 +6,13 @@
   "author": "Simon Hildebrandt <simonhildebrandt@gmail.com>",
   "license": "MIT",
   "scripts": {
+    "build:css": "postcss css/styles.css -o assets/bundle.css",
     "watch:css": "postcss css/styles.css -o assets/bundle.css -w",
+    "build:sodapop:css": "postcss css/sodapop-search.css -o assets/sodapop-search.css",
     "watch:sodapop:css": "postcss css/sodapop-search.css -o assets/sodapop-search.css -w",
+    "build:react": "yarn esbuild src/index.jsx --bundle --outfile=assets/index.js",
     "watch:react": "yarn esbuild src/index.jsx --bundle --outfile=assets/index.js --watch",
+    "publish": "yarn build:css && yarn build:sodapop:css && yarn build:react && eleventy",
     "start": "eleventy --serve"
   },
   "dependencies": {
