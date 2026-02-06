@@ -12,7 +12,7 @@
     "watch:sodapop:css": "postcss css/sodapop-search.css -o assets/sodapop-search.css -w",
     "build:react": "yarn esbuild src/index.jsx --bundle --outfile=assets/index.js",
     "watch:react": "yarn esbuild src/index.jsx --bundle --outfile=assets/index.js --watch",
-    "publish": "yarn build:css && yarn build:sodapop:css && yarn build:react && eleventy",
+    "publish_site": "yarn build:css && yarn build:sodapop:css && yarn build:react && eleventy",
     "start": "eleventy --serve"
   },
   "dependencies": {
