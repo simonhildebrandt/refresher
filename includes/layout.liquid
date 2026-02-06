@@ -9,23 +9,28 @@ layout: "../../includes/raw.liquid"
         <a href="/topic/{{ topic }}">{{ topic }}</a>
       </li>
     {%- endfor -%}
-    <li class="interest-box">
-      <a href="/decade/{{decade_disproved}}">{{decade_disproved}}</a>
-    </li>
+    {%- if decade_disproved -%}
+      <li class="interest-box">
+        <a href="/decade/{{decade_disproved}}">{{decade_disproved}}</a>
+      </li>
+    {%- endif -%}
   </ul>
 
   <div class="wrapped-content">{{ content }}</div>
 
-  <hr>
+  {%- if related -%}
 
-  <h2>Related</h2>
-  <ul class="topic-list mb-8">
-  {% for rel in related %}
-    {% assign matches = collections.all | where: "fileSlug", rel %}
-    {% assign page = matches[0] %}
-    {% if page %}
-      <li class="interest-box"><a href="{{ page.url }}">{{ page.data.title }}</a></li>
-    {% endif %}
-  {% endfor %}
+    <hr>
+
+    <h2>Related</h2>
+    <ul class="topic-list mb-8">
+    {% for rel in related %}
+      {% assign matches = collections.all | where: "fileSlug", rel %}
+      {% assign page = matches[0] %}
+      {% if page %}
+        <li class="interest-box"><a href="{{ page.url }}">{{ page.data.title }}</a></li>
+      {% endif %}
+    {% endfor %}
+  {%- endif -%}
   </ul>
 </div>

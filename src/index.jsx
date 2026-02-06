@@ -13,6 +13,7 @@ const App = () => {
   const [results, setResults] = useState([]);
   const inputRef = useRef();
 
+  console.log({ open });
   useEffect(() => {
     axios.get("/corpus.json").then((response) => {
       const { idx, documents } = response.data;
@@ -24,12 +25,16 @@ const App = () => {
 
   useEffect(() => {
     const handleGlobalClick = (event) => {
-      if (
-        event.target instanceof HTMLButtonElement &&
-        !event.target.closest(".sodapop-search") &&
-        event.target.className !== "sodapop-search-trigger"
-      ) {
-        setOpen(false);
+      if (event.target.closest(".sodapop-search")) {
+        // Inside the search component
+        if (event.target instanceof HTMLButtonElement) {
+          setOpen(false);
+        }
+      } else {
+        // Outside the search component
+        if (event.target.className !== "sodapop-search-trigger") {
+          setOpen(false);
+        }
       }
     };
 
