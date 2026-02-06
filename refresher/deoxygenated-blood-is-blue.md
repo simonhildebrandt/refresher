@@ -57,19 +57,9 @@ science materials for decades afterward.
 
 ## Why It’s Wrong
 
-- **Hemoglobin chemistry:**
-  Oxygenated hemoglobin is bright red; deoxygenated hemoglobin is darker red,
-  not blue.
-
-- **Optical effects:**
-  Skin absorbs longer (red) wavelengths of light and reflects shorter (blue)
-  wavelengths, making veins appear bluish through the skin.
-
-- **Direct observation:**
-  During surgery or blood draws, venous blood is visibly dark red, not blue.
-
-- **True blue blood is rare:**
-  Some animals (like horseshoe crabs) have blue blood due to copper-based
-  hemocyanin—but humans do not.
+- **Hemoglobin chemistry:** Oxygenated hemoglobin is bright red; deoxygenated hemoglobin is darker red, not blue.
+- **Optical effects:** Skin absorbs longer (red) wavelengths of light and reflects shorter (blue) wavelengths, making veins appear bluish through the skin.
+- **Direct observation:** During surgery or blood draws, venous blood is visibly dark red, not blue.
+- **True blue blood is rare:** Some animals (like horseshoe crabs) have blue blood due to copper-based hemocyanin—but humans do not.
 
 In short: **veins look blue, but the blood inside them never is.**

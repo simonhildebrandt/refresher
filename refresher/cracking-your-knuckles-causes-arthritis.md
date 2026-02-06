@@ -54,19 +54,9 @@ arthritis development.
 
 ## Why It’s Wrong
 
-- **Cause of the sound:**
-  The “crack” comes from gas bubbles rapidly forming and collapsing in synovial
-  fluid, not bones grinding together.
-
-- **Joint structure:**
-  The act does not damage cartilage, ligaments, or bone surfaces.
-
-- **Clinical evidence:**
-  Population studies show no increased risk of osteoarthritis among habitual
-  knuckle crackers.
-
-- **Possible minor effects:**
-  Some studies note temporary swelling or reduced grip strength immediately
-  after cracking, but no lasting harm.
+- **Cause of the sound:** The “crack” comes from gas bubbles rapidly forming and collapsing in synovial fluid, not bones grinding together.
+- **Joint structure:** The act does not damage cartilage, ligaments, or bone surfaces.
+- **Clinical evidence:** Population studies show no increased risk of osteoarthritis among habitual knuckle crackers.
+- **Possible minor effects:** Some studies note temporary swelling or reduced grip strength immediately after cracking, but no lasting harm.
 
 In short: **knuckle cracking may be irritating, but it isn’t dangerous.**

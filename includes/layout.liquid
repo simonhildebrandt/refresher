@@ -1,7 +1,7 @@
 ---
 layout: "../../includes/raw.liquid"
 ---
-<div class="wrapped-content">
+<div class="content-layout">
   <h1>{{ title }}</h1>
   <ul class="topic-list mb-8">
     {%- for topic in topics -%}
@@ -9,9 +9,12 @@ layout: "../../includes/raw.liquid"
         <a href="/topic/{{ topic }}">{{ topic }}</a>
       </li>
     {%- endfor -%}
+    <li class="interest-box">
+      <a href="/decade/{{decade_disproved}}">{{decade_disproved}}</a>
+    </li>
   </ul>
 
-  {{ content }}
+  <div class="wrapped-content">{{ content }}</div>
 
   <hr>
 

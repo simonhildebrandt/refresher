@@ -11,7 +11,7 @@ layout: "../../includes/raw.liquid"
   <ul class="topic-list">
     {%- for item in collections.recent -%}
       <li class="interest-box">
-        <a class="flex flex-col gap-2" href="{{ item.url }}">
+        <a href="{{ item.url }}">
           <div class="font-bold">{{ item.data.title }}</div>
           <div>read more...</div>
         </a>
@@ -40,8 +40,11 @@ layout: "../../includes/raw.liquid"
 
 <div class="page-section">
   <h2>Try a random myth?</h2>
-  <a class="interest-box flex flex-col gap-2" href="{{ collections.random.url }}">
-    <div class="font-bold">{{ collections.random.data.title }}</div>
-    <div>read more...</div>
-  </a>
+  <ul class="topic-list">
+  <li>
+    <a class="interest-box" href="{{ collections.random.url }}">
+      <div class="font-bold">{{ collections.random.data.title }}</div>
+      <div>read more...</div>
+    </a>
+  </li>
 </div>

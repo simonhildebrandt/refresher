@@ -9,9 +9,9 @@ title: Refresher
     <link rel="stylesheet" href="{{'/assets/sodapop-search.css' | bust }}">
   </head>
   <body>
-    <div class="flex justify-between items-center w-full px-8 pt-2 gap-4">
+    <div class="header">
       <div>
-        <a class="flex font-bold text-lg" href="/">{{ siteName }}</a>
+        <a class="flex font-bold text-lg mr-4" href="/">{{ siteName }}</a>
       </div>
       <div class="flex gap-6 text-sm">
         <a href="/#topic">Browse by Topic</a>
@@ -21,9 +21,11 @@ title: Refresher
         <a href="mailto:{{email}}?subject={{ siteName }}">Submit a Myth</a>
       </div>
     </div>
-    <div id="search-root"></div>
-    <div class="content">
-      {{ content }}
+    <div class="main-wrapper">
+      <div id="search-root"></div>
+      <div class="content">
+        {{ content }}
+      </div>
     </div>
     <script src="{{'/assets/index.js' | bust }}"></script>
   </body>

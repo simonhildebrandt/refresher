@@ -6,13 +6,10 @@ export default function (eleventyConfig) {
   eleventyConfig.setInputDirectory("refresher");
   eleventyConfig.setIncludesDirectory("./includes");
   eleventyConfig.addWatchTarget("assets/");
+  eleventyConfig.addWatchTarget("includes/");
   eleventyConfig.addPassthroughCopy("./assets/bundle.css");
   eleventyConfig.addPassthroughCopy("./assets/sodapop-search.css");
   eleventyConfig.addPassthroughCopy("./assets/index.js");
-  // eleventyConfig.addWatchTarget("./includes/*");
-  // eleventyConfig.setServerOptions({
-  //   watch: ["./assets/*"],
-  // });
   eleventyConfig.addGlobalData("siteName", "Refresher");
   eleventyConfig.addGlobalData("email", "simonhildebrandt@gmail.com");
 
