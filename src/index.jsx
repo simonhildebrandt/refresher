@@ -13,7 +13,6 @@ const App = () => {
   const [results, setResults] = useState([]);
   const inputRef = useRef();
 
-  console.log({ open });
   useEffect(() => {
     axios.get("/corpus.json").then((response) => {
       const { idx, documents } = response.data;
