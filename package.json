@@ -8,7 +8,7 @@
   "scripts": {
     "build:css": "postcss css/styles.css -o assets/bundle.css",
     "watch:css": "postcss css/styles.css -o assets/bundle.css -w",
-    "publish_site": "yarn build:css && yarn build:sodapop:css && yarn build:react && eleventy",
+    "publish_site": "yarn build:css && eleventy",
     "start": "eleventy --serve"
   },
   "dependencies": {
