@@ -16,6 +16,14 @@ body {
   @apply bg-gray-50;
 }
 
+.large-menu {
+  @apply lg:gap-8 text-sm hidden lg:flex;
+}
+
+.small-menu {
+  @apply gap-6 text-sm lg:hidden flex;
+}
+
 .header {
   @apply flex flex-wrap items-center justify-between w-full py-4 px-8 bg-gray-100 ;
   h1 {
