@@ -8,8 +8,14 @@ export default function (eleventyConfig) {
   eleventyConfig.addWatchTarget("assets/");
   eleventyConfig.addWatchTarget("includes/");
   eleventyConfig.addPassthroughCopy("./assets/bundle.css");
-  eleventyConfig.addPassthroughCopy("./assets/sodapop-search.css");
-  eleventyConfig.addPassthroughCopy("./assets/index.js");
+  eleventyConfig.addPassthroughCopy({
+    "./node_modules/@apocryphilia/sodapop-search/lib/sodapop-search.css":
+      "./assets/sodapop-search.css",
+  });
+  eleventyConfig.addPassthroughCopy({
+    "./node_modules/@apocryphilia/sodapop-search/lib/sodapop-search.js":
+      "./assets/sodapop-search.js",
+  });
   eleventyConfig.addGlobalData("siteName", "Refresher");
   eleventyConfig.addGlobalData("email", "simonhildebrandt@gmail.com");
 
