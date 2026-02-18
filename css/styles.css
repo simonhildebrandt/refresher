@@ -77,7 +77,7 @@ body {
     }
 
     ul {
-      @apply list-disc list-inside my-4;
+      @apply list-disc list-inside ms-4 my-4;
       li {
         @apply mb-2;
       }
